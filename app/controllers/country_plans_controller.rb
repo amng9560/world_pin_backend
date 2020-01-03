@@ -1,0 +1,2 @@
+class CountryPlansController < ApplicationController
+end
