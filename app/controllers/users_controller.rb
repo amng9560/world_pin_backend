@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authenticate_request
+    skip_before_action :authenticate_request, except: [:show]
 
     def index
         @users = User.all
